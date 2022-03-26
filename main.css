@@ -88,7 +88,7 @@ body {
 }
 
 .incorrect_char {
-    color: red;
+    color: rgb(110, 3, 3);
     text-decoration: underline;
 }
 
