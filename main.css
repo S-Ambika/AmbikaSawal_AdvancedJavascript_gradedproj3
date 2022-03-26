@@ -1,0 +1,129 @@
+body {
+    /* background-color: #fe9801; */
+    color: black;
+    text-align: center;
+    background: url(images/bg1.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.container {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.heading {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    padding: 10px;
+    margin-top: 3%;
+    background-color: rgba(30, 39, 44, 0.3);
+    color: white;
+    /* box-shadow: rgb(152, 206, 236) 5px 8px 5px; */
+    border-radius: 20%;
+    animation: glow 2s infinite;
+    /* color: white; */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.timer,
+.errors,
+.accuracy,
+.cpm,
+.wpm {
+    background-color: #9be1f3;
+    height: 60px;
+    width: 70px;
+    margin: 20px 12px 12px 12px;
+    padding: 12px;
+    /* border-radius: 20%; */
+    box-shadow: black 5px 8px 5px;
+}
+
+.cpm,
+.wpm {
+    display: none;
+}
+
+.header_text {
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    font-weight: 600;
+}
+
+.curr_time,
+.curr_errors,
+.curr_accuracy,
+.curr_cpm,
+.curr_wpm {
+    font-size: 2.75rem;
+}
+
+.quote {
+    background-color: #46bcda;
+    font-size: 1.5rem;
+    margin: 10px;
+    padding: 25px;
+    box-shadow: black 5px 5px 5px;
+}
+
+.input_area {
+    background-color: #92dcee;
+    height: 80px;
+    width: 40%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 18px 15px 15px 15px;
+    padding: 20px;
+    border: 0px;
+    outline: none;
+    box-shadow: black 5px 8px 5px;
+}
+
+.incorrect_char {
+    color: red;
+    text-decoration: underline;
+}
+
+.correct_char {
+    color: darkgreen;
+}
+
+.restart_btn {
+    display: none;
+    background-color: #28bce9;
+    font-size: 1.5rem;
+    padding: 10px;
+    border: 0px;
+    box-shadow: black(5px 8px 5px);
+}
+
+.restart_btn:hover {
+    cursor: pointer;
+    background-color: #0790b9;
+}
+
+.input_area:focus {
+    background-color: #c9edf7;
+}
+
+.input_area:hover {
+    background-color: #c9edf7;
+}
+
+@keyframes glow {
+    50% {
+        box-shadow: rgb(139, 205, 240) 5px 8px 5px;
+        background-color: rgba(23, 30, 34, 0.15);
+    }
+}
