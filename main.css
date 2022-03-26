@@ -1,5 +1,4 @@
 body {
-    /* background-color: #fe9801; */
     color: black;
     text-align: center;
     background: url(images/bg1.jpg) no-repeat center center fixed;
@@ -25,10 +24,8 @@ body {
     margin-top: 3%;
     background-color: rgba(30, 39, 44, 0.3);
     color: white;
-    /* box-shadow: rgb(152, 206, 236) 5px 8px 5px; */
     border-radius: 20%;
     animation: glow 2s infinite;
-    /* color: white; */
 }
 
 .header {
