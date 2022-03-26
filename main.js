@@ -53,7 +53,7 @@ function updateQuote() {
         quoteNo = 0;
 }
 
-function processCurrentText() {
+function processCurrentQuote() {
 
     // get current input text and split it
     curr_input = input_area.value;
@@ -154,7 +154,7 @@ function finishGame() {
 
 function startGame() {
 
-    resetValues();
+    resetGame();
     updateQuote();
 
     // clear old and start a new timer
@@ -162,7 +162,7 @@ function startGame() {
     timer = setInterval(updateTimer, 1000);
 }
 
-function resetValues() {
+function resetGame() {
     timeLeft = TIME_LIMIT;
     timeElapsed = 0;
     errors = 0;
